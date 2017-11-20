@@ -1,0 +1,9 @@
+{
+    "files": "icons/*.svg",
+    "fontName": "wienicons",
+    "cssTemplateFontPath": "../font/",
+    "formats": ["ttf", "woff", "woff2"],
+    "template": "wienicons.css.njk",
+    "cssTemplateClassName": "icon",
+    "normalize": true
+}

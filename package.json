@@ -1,0 +1,35 @@
+{
+  "name": "customal",
+  "version": "1.0.0",
+  "description": "Project-specific ajustments to Wienimal.",
+  "main": "",
+  "author": "Dieter Holvoet <dieter@wieni.be>",
+  "license": "ISC",
+  "scripts": {
+    "build": "yarn build:styles && yarn build:webfont",
+    "build:styles": "node-sass scss/index.scss css/customal.css --output-style compressed && postcss -r css/customal.css",
+    "build:webfont": "webfont 'icons/*.svg' -d './font' && mv font/wienicons.css css && postcss -r css/wienicons.css"
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {
+        "browsers": [
+          "last 2 versions",
+          "IE 10",
+          "IE 11",
+          "Firefox >= 20"
+        ],
+        "add": true
+      }
+    }
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6"
+  },
+  "dependencies": {
+    "node-sass": "^4.5.3",
+    "postcss-cli": "^4.1.1",
+    "postcss-load-config": "^1.2.0",
+    "webfont": "^7.1.4"
+  }
+}

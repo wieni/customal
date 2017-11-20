@@ -1,0 +1,19 @@
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - customal
+id: customal_primary_local_tasks
+theme: customal
+region: pre_content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: false
+visibility: {  }

@@ -1,0 +1,19 @@
+langcode: nl
+status: true
+dependencies:
+  theme:
+    - customal
+id: customal_secondary_local_tasks
+theme: customal
+region: content
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  provider: core
+  label_display: '0'
+  primary: false
+  secondary: true
+visibility: {  }
