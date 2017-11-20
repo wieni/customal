@@ -6,7 +6,7 @@
   "author": "Dieter Holvoet <dieter@wieni.be>",
   "license": "ISC",
   "scripts": {
-    "build": "yarn build:styles && yarn build:webfont",
+    "build": "npm run build:styles && npm run build:webfont",
     "build:styles": "node-sass scss/index.scss css/customal.css --output-style compressed && postcss -r css/customal.css",
     "build:webfont": "webfont 'icons/*.svg' -d './font' && mv font/wienicons.css css && postcss -r css/wienicons.css"
   },
