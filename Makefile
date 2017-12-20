@@ -1,5 +1,5 @@
 assets:=$(shell find css font -type f)
-.PHONY: clean
+.PHONY: clean css
 
 css: package.json yarn.lock $(assets)
 	$(MAKE) node_modules

@@ -17,3 +17,6 @@ css/*
 !css/.gitkeep
 font/*
 !font/.gitkeep
+
+# JetBrains
+.idea
