@@ -1,4 +1,4 @@
-assets:=$(shell find css font -type f)
+assets:=$(shell find css font icons -type f)
 .PHONY: clean css
 
 css: package.json yarn.lock $(assets)
