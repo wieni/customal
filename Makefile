@@ -1,10 +1,11 @@
 assets:=$(shell find scss icons -type f)
-.PHONY: clean css
+.PHONY: clean
 
 css: package.json yarn.lock $(assets)
 	$(MAKE) node_modules
 	npm run build
 	rm -rf node_modules
+	touch css
 
 node_modules: package.json yarn.lock
 	yarn --pure-lockfile
