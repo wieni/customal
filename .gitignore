@@ -15,8 +15,6 @@ node_modules
 # Compiled assets
 css/*
 !css/.gitkeep
-font/*
-!font/.gitkeep
 
 # JetBrains
 .idea

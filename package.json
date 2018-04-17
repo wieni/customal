@@ -6,9 +6,7 @@
   "author": "Dieter Holvoet <dieter@wieni.be>",
   "license": "ISC",
   "scripts": {
-    "build": "npm run build:styles && npm run build:webfont",
-    "build:styles": "node-sass scss/index.scss css/customal.css --output-style compressed && postcss -r css/customal.css",
-    "build:webfont": "webfont 'icons/**/*.svg' -d './font' && mv font/wienicons.css css && postcss -r css/wienicons.css"
+    "build": "node-sass scss/index.scss css/customal.css --output-style compressed && postcss -r css/customal.css"
   },
   "postcss": {
     "plugins": {
@@ -27,7 +25,6 @@
     "autoprefixer": "^7.1.6",
     "node-sass": "^4.5.3",
     "postcss-cli": "^4.1.1",
-    "postcss-load-config": "^1.2.0",
-    "webfont": "^7.1.4"
+    "postcss-load-config": "^1.2.0"
   }
 }

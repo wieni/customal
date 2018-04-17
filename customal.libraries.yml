@@ -3,9 +3,3 @@ customal:
   css:
     theme:
       css/customal.css: {}
-
-wienicons:
-  version: '1.0.0'
-  css:
-    theme:
-      css/wienicons.css: {}
