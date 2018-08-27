@@ -1,4 +1,4 @@
-assets:=$(shell find scss icons -type f)
+assets:=$(shell find scss -type f)
 .PHONY: clean
 
 css: package.json yarn.lock $(assets)
