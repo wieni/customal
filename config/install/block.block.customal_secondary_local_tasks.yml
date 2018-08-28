@@ -5,7 +5,7 @@ dependencies:
     - customal
 id: customal_secondary_local_tasks
 theme: customal
-region: content
+region: pre_content
 weight: -2
 provider: null
 plugin: local_tasks_block
