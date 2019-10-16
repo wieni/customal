@@ -4,6 +4,7 @@ description: 'Project-specific ajustments to Wienimal.'
 version: VERSION
 core: 8.x
 base theme: wienimal
+logo: logo.svg
 
 # Regions from adminimal theme, since regions are not inherited from the base theme.
 regions:
