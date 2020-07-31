@@ -2,7 +2,7 @@ name: Customal
 type: theme
 description: 'Project-specific ajustments to Wienimal.'
 version: VERSION
-core: 8.x
+core_version_requirement: ^8 || ^9
 base theme: wienimal
 logo: logo.svg
 
