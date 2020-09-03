@@ -1,6 +1,6 @@
 name: Customal
 type: theme
-description: 'Project-specific ajustments to Wienimal.'
+description: "Project-specific ajustments to Wienimal."
 version: VERSION
 core_version_requirement: ^8 || ^9
 base theme: wienimal
@@ -8,22 +8,22 @@ logo: logo.svg
 
 # Regions from adminimal theme, since regions are not inherited from the base theme.
 regions:
-  header: 'Header'
-  pre_content: 'Pre-content'
+  header: "Header"
+  pre_content: "Pre-content"
   breadcrumb: Breadcrumb
   highlighted: Highlighted
   help: Help
   content: Content
-  page_top: 'Page top'
-  page_bottom: 'Page bottom'
-  sidebar_first: 'First sidebar'
+  page_top: "Page top"
+  page_bottom: "Page bottom"
+  sidebar_first: "First sidebar"
 
 regions_hidden:
   - sidebar_first
 
 libraries:
-  - wienimal/adminimal-styling
-  - wienimal/global-styling
-  - wienimal/dropdown
-  - wienimal/select2.behaviors
   - customal/customal
+  - wienimal/global
+  - wienimal/select2.wienimal
+  - wienimal/flatpickr.wienimal
+  - wienimal/dropbutton

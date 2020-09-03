@@ -1,5 +1,8 @@
 customal:
-  version: '1.0.0'
+  version: "1.0.0"
   css:
     theme:
-      css/customal.css: {}
+      public/resources/global.css: { preprocess: false }
+  js:
+    public/resources/global.js: { preprocess: false }
+    public/resources/runtime.js: { preprocess: false }

@@ -1,15 +1,14 @@
-assets:=$(shell find scss -type f)
+assets:=$(shell find resources -type f)
 .PHONY: clean
 
-css: package.json yarn.lock $(assets)
+public/resources: package.json package-lock.json $(assets)
 	$(MAKE) node_modules
 	npm run build
 	rm -rf node_modules
-	touch css
+	touch public/resources
 
-node_modules: package.json yarn.lock
-	yarn --pure-lockfile
-	npm rebuild node-sass
+node_modules: package.json package-lock.json
+	npm ci
 	touch node_modules
 
 clean:

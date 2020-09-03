@@ -3,28 +3,15 @@
   "version": "1.0.0",
   "description": "Project-specific ajustments to Wienimal.",
   "main": "",
-  "author": "Dieter Holvoet <dieter@wieni.be>",
+  "author": "Wieni <info@wieni.be>",
   "license": "ISC",
+  "private": true,
   "scripts": {
-    "build": "node-sass scss/index.scss css/customal.css --output-style compressed && postcss -r css/customal.css"
-  },
-  "postcss": {
-    "plugins": {
-      "autoprefixer": {
-        "browsers": [
-          "last 2 versions",
-          "IE 10",
-          "IE 11",
-          "Firefox >= 20"
-        ],
-        "add": true
-      }
-    }
+    "build": "NODE_ENV=production magic build"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.6",
-    "node-sass": "^4.5.3",
-    "postcss-cli": "^4.1.1",
-    "postcss-load-config": "^1.2.0"
-  }
+    "magic": "github:wieni/magic",
+    "prettier": "^2.0.5"
+  },
+  "dependencies": {}
 }
