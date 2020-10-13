@@ -10,7 +10,7 @@
     "build": "NODE_ENV=production magic build"
   },
   "devDependencies": {
-    "magic": "github:wieni/magic",
+    "@wieni/magic": "^1.0.8",
     "prettier": "^2.0.5"
   },
   "dependencies": {}
