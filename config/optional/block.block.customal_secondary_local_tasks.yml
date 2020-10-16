@@ -1,4 +1,4 @@
-langcode: nl
+langcode: en
 status: true
 dependencies:
   theme:
@@ -6,7 +6,7 @@ dependencies:
 id: customal_secondary_local_tasks
 theme: customal
 region: pre_content
-weight: -2
+weight: 0
 provider: null
 plugin: local_tasks_block
 settings:

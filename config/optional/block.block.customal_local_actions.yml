@@ -1,4 +1,4 @@
-langcode: nl
+langcode: en
 status: true
 dependencies:
   theme:
@@ -6,7 +6,7 @@ dependencies:
 id: customal_local_actions
 theme: customal
 region: content
-weight: -3
+weight: -10
 provider: null
 plugin: local_actions_block
 settings:

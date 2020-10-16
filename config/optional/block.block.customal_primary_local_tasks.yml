@@ -1,12 +1,12 @@
-langcode: nl
+langcode: en
 status: true
 dependencies:
   theme:
     - customal
 id: customal_primary_local_tasks
 theme: customal
-region: pre_content
-weight: -3
+region: header
+weight: 0
 provider: null
 plugin: local_tasks_block
 settings:
