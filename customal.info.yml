@@ -46,10 +46,6 @@ libraries-override:
       component:
         /core/themes/stable/css/core/dropbutton/dropbutton.css: /core/themes/claro/css/components/dropbutton.css
 
-  core/drupal.tabledrag:
-    js:
-      misc/tabledrag.js: /core/themes/claro/js/tabledrag.js
-
   core/drupal.vertical-tabs:
     css:
       component:
@@ -109,8 +105,6 @@ libraries-override:
 
   classy/user: false
 
-  user/drupal.user: claro/form.password-confirm
-
   field_ui/drupal.field_ui:
     css:
       theme:
@@ -144,7 +138,7 @@ libraries-override:
 
   core/drupal.tableheader:
     js:
-      misc/tableheader.js: /themes/contrib/ginjs/overrides/gin_tableheader.js
+      misc/tableheader.js: /themes/contrib/gin/js/overrides/gin_tableheader.js
 
   media_library/view:
     js:
