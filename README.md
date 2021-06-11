@@ -24,6 +24,8 @@ module.exports = {
 };
 ```
 
+The following entry will results in two javascript files: `global.js` (`resources/index.js`) and `search.js` (`resources/search.js`). When any of the files contains `css` (or `sass`), the output will be written to a `.css` file with the same name. In this case `global.css` and `search.css`.
+
 ## Security
 If you discover any security-related issues, please email
 [security@wieni.be](mailto:security@wieni.be) instead of using the issue
@@ -32,12 +34,3 @@ tracker.
 ## License
 Distributed under the MIT License. See the [LICENSE](LICENSE) file
 for more information.
-
-Customal
-======================
-
-[![Latest Stable Version](https://poser.pugx.org/wieni/customal/v/stable)](https://packagist.org/packages/wieni/wienimal)
-[![Total Downloads](https://poser.pugx.org/wieni/customal/downloads)](https://packagist.org/packages/wieni/wienimal)
-[![License](https://poser.pugx.org/wieni/customal/license)](https://packagist.org/packages/wieni/wienimal)
-
-> A Drupal 8 administration theme extending [Wienimal](https://github.com/wieni/wienimal), providing the ability to add project-specific styling to the administration.
