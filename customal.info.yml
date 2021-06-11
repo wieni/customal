@@ -23,7 +23,7 @@ regions_hidden:
 libraries:
   - claro/global-styling
   - gin/gin
-  - customal/customal
+  - customal/global
 
 libraries-override:
   system/base:

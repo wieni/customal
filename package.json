@@ -2,16 +2,31 @@
   "name": "customal",
   "version": "1.0.0",
   "description": "Project-specific adjustments to Gin.",
-  "main": "",
+  "main": "index.js",
   "author": "Wieni <info@wieni.be>",
-  "license": "ISC",
+  "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "NODE_ENV=production magic build"
+    "build": "NODE_ENV=production magic build",
+    "start": "NODE_ENV=development magic start"
   },
   "devDependencies": {
-    "@wieni/magic": "^1.0.8",
-    "prettier": "^2.0.5"
+    "@wieni/magic": "^2.0.0-beta.17",
+    "@wieni/prettier-config": "^1.0.0",
+    "prettier": "^2.3.0"
   },
-  "dependencies": {}
+  "prettier": "@wieni/prettier-config",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not IE 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

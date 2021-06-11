@@ -1,8 +1,3 @@
-customal:
-  version: "1.0.0"
-  css:
-    theme:
-      public/resources/global.css: { preprocess: false }
-  js:
-    public/resources/global.js: { preprocess: false }
-    public/resources/runtime.js: { preprocess: false }
+global:
+  version: VERSION
+  dependencies: {  }

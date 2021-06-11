@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * Implements @see hook_library_info_alter().
+ *
+ * This is where — magic — happens.
+ */
+function customal_library_info_alter(array &$libraries, string $extension): void
+{
+    $themes = \Drupal::service('extension.list.theme');
+
+    if (!$themes->exists($extension)) {
+        return;
+    }
+
+    $themePath = $themes->getPath($extension);
+    $resourcesDir = 'public/resources';
+    $manifestPath = $themePath . '/' . $resourcesDir . '/asset-manifest.json';
+
+    if (!file_exists($manifestPath)) {
+        return;
+    }
+
+    $manifestFile = file_get_contents($manifestPath);
+    $manifest = json_decode($manifestFile, true);
+
+    foreach ($manifest['entrypoints'] as $entrypoints => $entrypoint) {
+        foreach ($entrypoint as $entry => $files) {
+            $libraries[$entry]['version'] = 'VERSION';
+
+            foreach ($files as $file) {
+                $pathinfo = pathinfo($file);
+
+                switch ($pathinfo['extension']) {
+                    case 'css':
+                        $libraries[$entry]['css']['theme'][$resourcesDir . '/' . $file] = ['preprocess' => false, 'minified' => true];
+                        break;
+                    case 'js':
+                        $libraries[$entry]['js'][$resourcesDir . '/' . $file] = ['preprocess' => false, 'minified' => true];
+                        break;
+                }
+            }
+        }
+    }
+}
